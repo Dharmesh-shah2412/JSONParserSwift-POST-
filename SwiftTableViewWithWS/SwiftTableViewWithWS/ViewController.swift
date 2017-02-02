@@ -139,7 +139,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         let strUserId = "296"
         let postString = "key=\(strKey)&profile_id=\(strUserId)"
         let paramData = postString.data(using: .utf8)
-        post(apiUrl: "http://216.55.169.45/~apiphotobug/v1/my-profile-feed", requestPARAMS: paramData!) { (success, responseData) in
+        post(apiUrl: "UR POST URL", requestPARAMS: paramData!) { (success, responseData) in
             DispatchQueue.main.async
                 {
                     if success
